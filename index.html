@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十二生肖贪吃蛇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>十二生肖贪吃蛇</h1>
+            <div class="score-container">分数: <span id="score">0</span></div>
+        </div>
+        
+        <div class="game-controls">
+            <div class="control-group">
+                <label for="difficulty">难度:</label>
+                <select id="difficulty">
+                    <option value="easy">简单</option>
+                    <option value="medium" selected>中等</option>
+                    <option value="hard">困难</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="speed">速度:</label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+                <span id="speed-value">5</span>
+            </div>
+            
+            <button id="start-btn">开始游戏</button>
+            <button id="pause-btn">暂停</button>
+        </div>
+        
+        <canvas id="game-canvas"></canvas>
+        
+        <div class="zodiac-stats">
+            <h3>生肖收集统计:</h3>
+            <div id="zodiac-counter" class="zodiac-counter"></div>
+        </div>
+        
+        <div class="instructions">
+            <h3>游戏说明:</h3>
+            <p>使用 W(上), S(下), A(左), D(右) 控制龙的移动</p>
+            <p>收集十二生肖增加分数，避开障碍物</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
