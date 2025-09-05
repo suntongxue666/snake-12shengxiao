@@ -23,3 +23,5 @@
 ## 游戏截图
 
 ![游戏截图](https://github.com/suntongxue666/snake-12shengxiao/raw/main/screenshot.png)
+
+...
